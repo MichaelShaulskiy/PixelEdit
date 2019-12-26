@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="pixeledit.jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/pixeledit_jar</output-path>
+    <root id="archive" name="Gamma.jar">
+      <element id="module-output" name="Gamma" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/redist/annotations-java8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

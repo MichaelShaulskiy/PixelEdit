@@ -11,7 +11,7 @@ import java.util.*;
 import java.util.List;
 
 import me.interject.gamma.Pixel;
-import me.interject.math.IntersectionKt;
+import me.interject.math.Intersection;
 
 
 /**
@@ -53,7 +53,7 @@ public class EditorCanvas extends me.interject.gamma.Canvas {
 				else {
 					/* TODO: optimize */
 					pixels.forEach(p -> {
-						if(IntersectionKt.intersect(p.getX(), boundingBox.width, e.getX(), boundingBox.width) && IntersectionKt.intersect(p.getY(), boundingBox.width, e.getY(), boundingBox.width)) pixels.remove(p);
+						if(Intersection.intersect(p.getX(), boundingBox.width, e.getX(), boundingBox.width) && Intersection.intersect(p.getY(), boundingBox.width, e.getY(), boundingBox.width)) pixels.remove(p);
 						/* probably should only repaint on change */
 						repaint();
 					});

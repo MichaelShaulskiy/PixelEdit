@@ -100,12 +100,12 @@ public class EditorCanvas extends me.interject.gamma.Canvas {
 		});
 
 		/* initialize the shading language */
-		shaderScript = new ScriptEngineManager().getEngineByName("nashorn");
-		try {
-			shaderScript.eval("var Shader = Java.type('javax.swing.JOptionPane'); Shader.showMessageDialog(null, 'Hier meldet sich der JS Shader')");
-		} catch (ScriptException e) {
-			e.printStackTrace();
-		}
+		//shaderScript = new ScriptEngineManager().getEngineByName("nashorn");
+		//try {
+			//shaderScript.eval("var Shader = Java.type('javax.swing.JOptionPane'); Shader.showMessageDialog(null, 'Hier meldet sich der JS Shader')");
+		//} catch (ScriptException e) {
+			//e.printStackTrace();
+		//g}
 	}
 
 	public void setGridSize(int size){
